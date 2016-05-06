@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pt.iscte.pamdaam.myservicesample.MainActivity">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Service"
+        android:id="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="clickStartService"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Service"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:onClick="clickStopService"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tvCountChars"
+        android:layout_marginBottom="51dp"
+        android:layout_above="@+id/button3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Intent Service"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="clickStartIntentService"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPhrase"
+        android:layout_above="@+id/button3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Foreground"
+        android:id="@+id/btnStartForeground"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:onClick="clickStartForeground"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show time - Bind"
+        android:id="@+id/button4"
+        android:layout_below="@+id/btnStartForeground"
+        android:layout_centerHorizontal="true"
+        android:onClick="clickShowTime"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tvTimestamp"
+        android:layout_below="@+id/button4"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
